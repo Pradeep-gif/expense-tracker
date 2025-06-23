@@ -3,7 +3,7 @@ import pandas as pd
 import datetime
 import os
 
-st.title("💸 Expense Tracker")
+st.title(" Expense Tracker")
 st.write("Track your daily expenses easily.")
 
 # CSV file path
