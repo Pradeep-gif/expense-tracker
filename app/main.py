@@ -47,3 +47,11 @@ with st.form("expense_form"):
 if os.path.exists(csv_file):
     st.subheader("📊 Expense History")
     with open(csv_file, "r") as f:
+        reader = csv.reader(f)
+        expenses = list(reader)
+        if expenses:
+            st.table(expenses)
+        else:
+            st.write("No expenses recorded yet.")
+else:
+    st.write("No expenses recorded yet.")
