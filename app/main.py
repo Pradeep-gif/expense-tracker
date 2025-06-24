@@ -14,7 +14,7 @@ csv_file = "data/expenses.csv"
 
 # Google Sheets setup
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-creds_dict = json.loads(st.secrets["GOOGLE_SHEETS_CREDS"])
+creds_dict = st.secrets["GOOGLE_SHEETS_CREDS"]
 creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
 client = gspread.authorize(creds)
 sheet = client.open("ExpenseTrackerData").sheet1
