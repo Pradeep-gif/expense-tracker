@@ -42,16 +42,18 @@ with st.form("expense_form"):
         sheet.append_row([str(date), category, amount, description])
 
         st.success("✅ Expense added!")
+        st.success("Thanks For trying my first project")
+        st.success("Lets Connect in Linked in Name: Pradeep Nandagiri")
 
 # Display saved expenses
-if os.path.exists(csv_file):
-    st.subheader("📊 Expense History")
-    with open(csv_file, "r") as f:
-        reader = csv.reader(f)
-        expenses = list(reader)
-        if expenses:
-            st.table(expenses)
-        else:
-            st.write("No expenses recorded yet.")
-else:
-    st.write("No expenses recorded yet.")
+#if os.path.exists(csv_file):
+   # st.subheader("📊 Expense History")
+    #with open(csv_file, "r") as f:
+     #   reader = csv.reader(f)
+      #  expenses = list(reader)
+       # if expenses:
+        #    st.table(expenses)
+        #else:
+         #   st.write("No expenses recorded yet.")
+#else:
+ #   st.write("No expenses recorded yet.")
