@@ -43,7 +43,7 @@ with st.form("expense_form"):
 
         st.success("✅ Expense added!")
         st.success("Thanks For trying my first project")
-        st.success("Lets Connect in Linked in Name: Pradeep Nandagiri")
+        st.success("Lets Connect in Linkedin Name: Pradeep Nandagiri")
 
 # Display saved expenses
 #if os.path.exists(csv_file):
